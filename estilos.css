@@ -270,7 +270,7 @@
 }
 
 .catalogo1 img:hover{
-    width: 30rem;
+    width: 15rem;
 }
 
 
@@ -307,7 +307,7 @@
 }
 
 .catalogo2 img:hover{
-    width: 30rem;
+    width: 15rem;
 }
 
 /* index3 */
@@ -528,6 +528,12 @@
         font-size: 25px;
     }
     
+    .catalogo1 img:hover{
+        width: 20rem;
+    }
+    .catalogo2 img:hover{
+        width: 20rem;
+    }
 }
 
 @media (min-width:1020px){
@@ -636,7 +642,12 @@
         padding: 30px;
     }
 
-    
+    .catalogo1 img:hover{
+        width: 21rem;
+    }
+    .catalogo2 img:hover{
+        width: 21rem;
+    }
 }
 
 
