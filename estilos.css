@@ -1,0 +1,644 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* index1 */
+  
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 0.5fr 2.9fr auto;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    height: auto;
+    width: 100vw;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "navbar navbar navbar navbar"
+      "banner banner banner banner"
+      "section section section section"
+      "footer footer footer footer";
+  }
+  
+.navbar { 
+    grid-area: navbar;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    height: auto;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo img{
+    width: 3rem;
+    
+}
+
+.listas{
+    width: 100vw;
+}
+.links{
+    display: flex;
+    justify-content: space-around
+}
+
+.links li{
+    list-style-type: none;
+}
+
+.links li a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.7rem;
+    
+}
+
+.links li a:hover{
+    color: white;
+    background: black;
+    transition: 1.3s;
+    border-radius: 1px;
+    padding: 8px;
+}
+
+.banner { 
+    grid-area: banner; 
+    background-image: url(img/banner.jpg);
+    height: 20vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bannerOfertas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bannerOfertas h2{
+    color: rgba(253, 16, 16, 0.697);
+    font-weight: bolder;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.bannerOfertas a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 0.7px solid white;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.bannerOfertas a:hover{
+    background: rgb(255, 255, 255);
+    transition: 1.4s;
+    color: black;
+    border-radius: 4px;
+}
+  
+.section { 
+    grid-area: section; 
+    background-color: rgb(255, 255, 255);
+    height: 1060px;
+}
+.info{
+    display: flex;
+    height: 35vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.info a{
+    text-decoration: none;
+    background-color: dodgerblue;
+    border-radius: 3px;
+    padding: 8px;
+    color: white;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.articulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 57vh;
+    justify-content: space-around;
+}
+.menu2{
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.articulo a{
+    text-decoration: none;
+    background-color: dodgerblue;
+    border-radius: 3px;
+    padding: 8px;
+    color: white;
+}
+.footer { 
+    grid-area: footer; 
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+}
+.footer img{
+    width: 1.6rem;
+}  
+
+
+
+/* index2 */
+
+.container2 {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 0px 0px;
+    width: 100%;
+    height: auto;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "navbar navbar navbar"
+      "banner2 banner2 banner2"
+      "compras compras compras"
+      "footer footer footer";
+  }
+  
+.navbar { 
+    grid-area: navbar;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    height: auto;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.banner2 { 
+    grid-area: banner2; 
+    background-color: rgb(204, 204, 204);
+    height: 79.2px;
+}
+.box{
+    display: flex;
+    justify-content: space-evenly;
+}
+.box a{
+    color: black;
+    text-decoration: none;
+}
+.juegos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 3px white solid;
+    border-right: 3px white solid;;
+}
+
+.productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 3px white solid;
+    border-right: 3px white solid;;
+}
+.compras { 
+    grid-area: compras; 
+}
+
+.catalogo1{
+    display: flex;
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.catalogo1 div{
+    border: 2px solid rgb(204, 204, 204);
+    padding: 8px;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.catalogo1 div ul{
+    text-align: left;
+}
+.catalogo1 a{
+    text-decoration: none;
+    border: 2px solid black;
+    color: black;
+    padding: 5px;
+    border-radius: 4px;
+}
+.catalogo1 a:hover{
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+    transition: 1.5s;
+}
+#precio1{
+    text-decoration: line-through;
+    color: red;
+    
+}
+.span{
+    font-weight: bold;
+}
+
+.catalogo1 img:hover{
+    width: 30rem;
+}
+
+
+.catalogo2{
+    display: flex;
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+}
+
+.catalogo2 div{
+    border: 2px solid rgb(204, 204, 204);
+    padding: 8px;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.catalogo2 div ul{
+    text-align: left;
+}
+.catalogo2 a{
+    text-decoration: none;
+    border: 2px solid black;
+    color: black;
+    padding: 5px;
+    border-radius: 4px;
+}
+.catalogo2 a:hover{
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+    transition: 1.5s;
+}
+
+.catalogo2 img:hover{
+    width: 30rem;
+}
+
+/* index3 */
+
+.container3 {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 2.3fr auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "navbar navbar navbar"
+      "registro registro registro"
+      "footer footer footer";
+  }
+  
+
+  
+.registro {
+    grid-area: registro; 
+}
+
+.registro h2{
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:dodgerblue;
+    color: white;
+    border-radius: 8px;
+    margin-top: 7px;
+}
+
+.formulario{
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    border-radius: 4px;
+    color: white;
+    width: 70vw;
+    height: 60vh;
+    display: flex;
+}
+
+.formulario p{
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.formulario a{
+    color: rgb(255, 255, 255);
+}
+.controles{
+    width: 100%;
+    background:#24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c6;
+}
+
+.boton{
+    width: 100%;
+    background: dodgerblue;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    text-align: center;
+
+}
+
+/* index4 */
+
+
+.container4 {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "navbar navbar navbar"
+      "contacto contacto contacto"
+      "contacto contacto contacto"
+      "footerr footerr footerr";
+  }
+  
+
+  
+.contacto { 
+    grid-area: contacto; 
+}
+  
+.atencion{
+    width: 100vw;
+    background-image: url(img/atencion-telefonica.jpg);
+    height: 20vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.atencion h1{
+    display: flex;
+    font-size: 20px;
+    font-weight: bolder;
+    height: 12vh;
+    text-align: center;
+    align-items: flex-end;
+}
+
+.footerr { 
+    grid-area: footerr; 
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 19vh;
+    width: 100vw;
+}
+.footerr img{
+    width: 1.6rem;
+}  
+
+.contacto2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    justify-content: space-around;
+}
+
+.opciones{
+    display: flex;
+}
+
+.atencionCliente{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    padding: 8px;
+    background-color: rgb(192, 192, 192);
+    margin: 0 5px;
+    align-items: center;
+}
+.garantias{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    padding: 8px;
+    background-color: rgb(188, 188, 188);
+    margin: 0 5px;
+    align-items: center;
+}
+
+.opciones div a{
+    text-decoration: none;
+    background-color: dodgerblue;
+    border-radius: 3px;
+    padding: 3px;
+    color: white;
+}
+
+.llamar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width:750px){
+    .navbar{
+        display: flex;
+        flex-direction: row;
+    }
+    .links li a{
+        font-size: 1rem;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .articulo{
+        display: flex;
+    }
+    .menu2{
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    .articulo{
+        height: auto;
+    }
+    .catalogo1{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .catalogo2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .atencion{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .atencion h1{
+        font-size: 25px;
+    }
+    
+}
+
+@media (min-width:1020px){
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 15vh;
+    }
+
+    .links li a{
+        margin: 0 2vw;
+        font-size: 1rem;
+    }
+
+    .listas{
+        width: auto;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 90vh;
+    }
+    .menu img{
+        width: 30rem;
+    }
+    .info img{
+        width: 20rem;
+    }
+
+    .info{
+        display: flex;
+    }
+    .articulo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: auto;
+    }
+
+    .articulo img{
+        width: 35rem;
+    }
+    .menu2{
+        display: flex;
+        height: 38vh;
+        justify-content: space-between;
+    }
+
+    .menu2 h2{
+        font-size: 2.5rem;
+    }
+    .footer{
+        height: auto;
+    }
+
+    .catalogo1{
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+
+    .catalogo1 div{
+        width: 30%;
+    }
+    .catalogo2{
+        display: flex;
+    }
+
+    .catalogo2 div{
+        width: 33%;
+    }
+
+    .atencion{
+        width: 100vw;
+        background-image: url(img/atencion-telefonica.jpg);
+        height: 40vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .atencion h1{
+    display: flex;
+    font-size: 30px;
+    font-weight: bolder;
+    height: 17vh;
+    text-align: center;
+    justify-content: center;
+    }
+
+    .atencionCliente{
+        
+        padding: 30px;
+        
+    }
+    .garantias{
+        
+        padding: 30px;
+    }
+
+    
+}
+
+
+
+
